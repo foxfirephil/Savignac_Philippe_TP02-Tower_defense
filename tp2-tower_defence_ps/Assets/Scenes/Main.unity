@@ -4393,10 +4393,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1773133671}
+  - component: {fileID: 1773133672}
   m_Layer: 0
   m_Name: spawn
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -4408,12 +4409,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1773133670}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -25.805115, y: 13.632169, z: 49.096916}
+  m_LocalPosition: {x: -11.887, y: 0.4, z: 57.52}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1773133672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1773133670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e706af29ea5294fb7a5d495c67a64e83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zombprefab: {fileID: 4816881575767821592, guid: b676891bec3334a16abe57d77e77cea7, type: 3}
+  level: 1
 --- !u!1001 &1793768590
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5562,7 +5577,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5735917491377582794, guid: df81a6def3ac544fbb6308d12dd0c070, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.9557419
+      value: 7.88
       objectReference: {fileID: 0}
     - target: {fileID: 5735917491377582794, guid: df81a6def3ac544fbb6308d12dd0c070, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5633,7 +5648,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5520068156853397963, guid: ae62c4ad9da7c4cbb99d32d82d6d452a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.6678772
+      value: 9.52
       objectReference: {fileID: 0}
     - target: {fileID: 5520068156853397963, guid: ae62c4ad9da7c4cbb99d32d82d6d452a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5698,7 +5713,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5301529411226671010, guid: b676891bec3334a16abe57d77e77cea7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.30136108
+      value: 8.11
       objectReference: {fileID: 0}
     - target: {fileID: 5301529411226671010, guid: b676891bec3334a16abe57d77e77cea7, type: 3}
       propertyPath: m_LocalRotation.w
