@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class pauseHandler : MonoBehaviour
+public class PauseHandler : MonoBehaviour
 {
     public Button BtnPause;
     public Button BtnPlay;

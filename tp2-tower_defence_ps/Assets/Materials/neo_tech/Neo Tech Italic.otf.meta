@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 6fefe1d3f7c9ebd44bc42679fba0b39a
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Neo Tech
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 554a7f9bbb747374bac6ef5cbb756227, type: 3}
+  - {fileID: 12800000, guid: 313e7bff586823a4a8ea8d3b8f140061, type: 3}
+  - {fileID: 12800000, guid: dd88002738af2cf449b85e115be58999, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
