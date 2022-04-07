@@ -34,7 +34,7 @@ public class TextHandler : MonoBehaviour
 
 
         Update_text_coins(Coins.nbCoins);
-        Update_text_death(Spawn.nbEnn);
+        Update_text_death(GameManager.nbEnn);
         Update_text_life(Life.nbLife);
         Update_text_timer(b,c);
         Update_text_level(GameManager.level);

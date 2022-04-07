@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface IZombie 
+public interface IFreeze
 {
-    void TakeDamage();
+    public void slow();
 }
+

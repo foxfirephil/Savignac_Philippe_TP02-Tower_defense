@@ -1,38 +1,42 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AI;
 
-public class GunTurret : MonoBehaviour
+public class BombTurret : MonoBehaviour
 {
-    float radius = 10f;
+    private float radius = 10f;
     public float speed = 1.0f;
-    AudioSource gunFireFX;
 
+    public GameObject PrefabBomb;
+    public Transform barrel;
+
+    AudioSource bombFireFX;
+
+    private bool timerActive = false;
+    private float timerBomb = 5f;
     // Start is called before the first frame update
     void Start()
     {
-        gunFireFX = GetComponent<AudioSource>();
-        InvokeRepeating("Check_colliders", 0f,0.05f);
-        //InvokeRepeating("Zombie_damage",0f,1f);
+        barrel = GetComponent<Transform>();
+        bombFireFX = GetComponent<AudioSource>();
+        InvokeRepeating("Check_colliders", 0f, 0.05f);
     }
 
-    private bool timerActive = false;
-    private float timerGun = 1f;
+
     // Update is called once per frame
     void Update()
     {
         if (timerActive)
         {
-            if (timerGun > 0)
+            if (timerBomb > 0)
             {
-                timerGun -= Time.deltaTime;
+                timerBomb -= Time.deltaTime;
             }
-            if (timerGun < 0)
+            if (timerBomb < 0)
             {
                 timerActive = false;
-                timerGun =1f;
-                Zombie_damage();
+                timerBomb = 5f;
+                Zombie_bomb();
             }
         }
     }
@@ -60,19 +64,11 @@ public class GunTurret : MonoBehaviour
         }
     }
 
-    void Zombie_damage() 
+    void Zombie_bomb()
     {
-        gunFireFX.Play();
-        Collider[] colliders = Physics.OverlapSphere(transform.position, radius);
-        foreach (Collider c in colliders)
-        {
-            IZombie damageable = c.GetComponentInParent<IZombie>();
-            if (damageable != null)
-            {
-                damageable.TakeDamage();
-                break;
-            }
-        }
-            
+        bombFireFX.Play();
+        Instantiate(PrefabBomb, barrel.position, Quaternion.identity);
+        Rigidbody rigidBody = PrefabBomb.GetComponent<Rigidbody>();
+        rigidBody.AddForce(transform.forward * 10f, ForceMode.Impulse);
     }
 }

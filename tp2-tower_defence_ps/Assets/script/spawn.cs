@@ -4,18 +4,15 @@ using UnityEngine;
 
 public class Spawn : MonoBehaviour
 {
-
     public GameObject zombprefab;
     public GameObject warokprefab;
     public GameObject nshdprefab;
     public int level;
-    static public int nbEnn;
 
     private float timer = 5f;
     // Start is called before the first frame update
     void Start()
     {
-        nbEnn = 0;
         level = 1;
     }
 
@@ -34,10 +31,6 @@ public class Spawn : MonoBehaviour
             warrok_inst();
         }
 
-        if (nbEnn<=0)
-        {
-            
-        }
         
 
     }

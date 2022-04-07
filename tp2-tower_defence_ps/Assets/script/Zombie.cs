@@ -8,6 +8,7 @@ public class Zombie : MonoBehaviour, IZombie
     Rigidbody[] rbs;
     Animator animator;
     AudioSource deathsound;
+    Collider bodyCol;
 
     // Start is called before the first frame update
     void Start()
@@ -15,6 +16,7 @@ public class Zombie : MonoBehaviour, IZombie
         rbs = GetComponentsInChildren<Rigidbody>();
         animator = GetComponent<Animator>();
         deathsound = GetComponent<AudioSource>();
+        bodyCol = GetComponent<Collider>();
 
         ToggRagdoll(false);
     }
@@ -22,20 +24,26 @@ public class Zombie : MonoBehaviour, IZombie
     // Update is called once per frame
     void Update()
     {
-        
+
     }
     public void TakeDamage()
     {
+        lifebar -= 1;
         if (lifebar <= 0)
         {
-            deathsound.Play();
             Die();
+            lifebar = 10000;
         }
     }
 
     void Die()
     {
         ToggRagdoll(true);
+        bodyCol.enabled = false;
+        GameManager.nbEnn += 1;
+        Coins.nbCoins += 100;
+        deathsound.Play();
+        Destroy(gameObject, 2f);
     }
 
     void ToggRagdoll(bool value)

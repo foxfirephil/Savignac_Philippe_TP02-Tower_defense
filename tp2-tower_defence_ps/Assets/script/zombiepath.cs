@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class ZombiePath : MonoBehaviour, IZombie
+public class ZombiePath : MonoBehaviour, IFreeze
 {
     NavMeshAgent agent;
     private float X = 15.24f;
@@ -33,4 +33,7 @@ public class ZombiePath : MonoBehaviour, IZombie
             }
         }
     }
+
+    public void slow()
+    { agent.speed=-2; }
 }
