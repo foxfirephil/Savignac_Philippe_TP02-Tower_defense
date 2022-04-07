@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class ZombiePath : MonoBehaviour
+public class ZombiePath : MonoBehaviour, IZombie
 {
     NavMeshAgent agent;
     private float X = 15.24f;
     private float Z = -52.86f;
-    public int lifebar;
 
     // Start is called before the first frame update
     void Start()
@@ -33,12 +32,5 @@ public class ZombiePath : MonoBehaviour
                 break;
             }
         }
-    }
-
-    void take_dmg()
-    {
-        if (lifebar<=0)
-        { }
-
     }
 }
