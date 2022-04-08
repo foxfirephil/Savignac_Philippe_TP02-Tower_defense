@@ -15,11 +15,11 @@ C:/Users/phili/Documents/unityProject/tp2-Philippe_savignac/tp2-tower_defence_ps
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-55209
+60918
 Successfully changed project path to: C:/Users/phili/Documents/unityProject/tp2-Philippe_savignac/tp2-tower_defence_ps
 C:/Users/phili/Documents/unityProject/tp2-Philippe_savignac/tp2-tower_defence_ps
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 135.40 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 267.85 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.27f1 (e759542391ea)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Resources/UnitySubsystems
@@ -35,318 +35,44 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56756
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56768
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.006038 seconds.
+Registered in 0.351273 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 115.62 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 158.68 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.023 seconds
+- Completed reload, in  5.947 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1023ms)
-		BeginReloadAssembly (101ms)
+	ReloadAssembly (5948ms)
+		BeginReloadAssembly (3828ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (766ms)
-			LoadAssemblies (100ms)
+		EndReloadAssembly (1441ms)
+			LoadAssemblies (3830ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (232ms)
+			SetupTypeCache (678ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (47ms)
-			SetupLoadedEditorAssemblies (316ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (532ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (116ms)
-				BeforeProcessingInitializeOnLoad (23ms)
-				ProcessInitializeOnLoadAttributes (128ms)
-				ProcessInitializeOnLoadMethodAttributes (42ms)
+				RefreshPlugins (159ms)
+				BeforeProcessingInitializeOnLoad (185ms)
+				ProcessInitializeOnLoadAttributes (129ms)
+				ProcessInitializeOnLoadMethodAttributes (51ms)
 				AfterProcessingInitializeOnLoad (0ms)
-				EditorAssembliesLoaded (0ms)
+				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.008937 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\phili\Documents\unityProject\tp2-Philippe_savignac\tp2-tower_defence_ps\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\phili\Documents\unityProject\tp2-Philippe_savignac\tp2-tower_defence_ps\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.75 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.600 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1601ms)
-		BeginReloadAssembly (215ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (27ms)
-		EndReloadAssembly (1291ms)
-			LoadAssemblies (140ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (463ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (65ms)
-			SetupLoadedEditorAssemblies (498ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (166ms)
-				ProcessInitializeOnLoadAttributes (305ms)
-				ProcessInitializeOnLoadMethodAttributes (6ms)
-				AfterProcessingInitializeOnLoad (10ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (10ms)
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
-Refreshing native plugins compatible for Editor in 0.69 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2960 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 123.2 MB.
-System memory in use after: 123.4 MB.
-
-Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3412.
-Total: 5.262500 ms (FindLiveObjects: 0.382100 ms CreateObjectMapping: 0.136600 ms MarkObjects: 4.612300 ms  DeleteObjects: 0.129800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  path: Assets/Scenes/Main.unity
-  artifactKey: Guid(0c251cc250c9b4449a834292e82bfd92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Main.unity using Guid(0c251cc250c9b4449a834292e82bfd92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9c2aeafed4ab745249f20958d7fdca2') in 0.027471 seconds 
-  Import took 0.033164 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000336 seconds.
-  path: Assets/Scenes/Main
-  artifactKey: Guid(99547844f161f487aaeb037b101b5d80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Main using Guid(99547844f161f487aaeb037b101b5d80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fec498e25b061931caaf6020b7700d4') in 0.021609 seconds 
-  Import took 0.029333 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000390 seconds.
-  path: Assets/Scenes/Main/NavMesh.asset
-  artifactKey: Guid(b37537078270e4e42b08a1b845050f64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Main/NavMesh.asset using Guid(b37537078270e4e42b08a1b845050f64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd0df5d0d9b76174f49dff00a5ef6022') in 0.040604 seconds 
-  Import took 0.047459 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 38.258872 seconds.
-  path: Assets/Prefabs/monstres/nightshade Variant.prefab
-  artifactKey: Guid(df81a6def3ac544fbb6308d12dd0c070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/monstres/nightshade Variant.prefab using Guid(df81a6def3ac544fbb6308d12dd0c070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4850687a8f53c1fbcc3c4244893afa1') in 0.183595 seconds 
-  Import took 0.193229 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.018368 seconds.
-  path: Assets/Prefabs/monstres/nightshade Variant.prefab
-  artifactKey: Guid(df81a6def3ac544fbb6308d12dd0c070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/monstres/nightshade Variant.prefab using Guid(df81a6def3ac544fbb6308d12dd0c070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed21e734f2136f7a3e77eddc59470d47') in 0.062329 seconds 
-  Import took 0.070320 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.143916 seconds.
-  path: Assets/Prefabs/monstres/nightshade Variant.prefab
-  artifactKey: Guid(df81a6def3ac544fbb6308d12dd0c070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/monstres/nightshade Variant.prefab using Guid(df81a6def3ac544fbb6308d12dd0c070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84b1f350790ad11138c9626947cf35de') in 0.032156 seconds 
-  Import took 0.039886 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 14.336801 seconds.
-  path: Assets/Prefabs/monstres/nightshade Variant.prefab
-  artifactKey: Guid(df81a6def3ac544fbb6308d12dd0c070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/monstres/nightshade Variant.prefab using Guid(df81a6def3ac544fbb6308d12dd0c070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ff35c36d623b1b558dd95a132b6cf08') in 0.040916 seconds 
-  Import took 0.050877 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.114664 seconds.
-  path: Assets/Prefabs/monstres/nightshade Variant.prefab
-  artifactKey: Guid(df81a6def3ac544fbb6308d12dd0c070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/monstres/nightshade Variant.prefab using Guid(df81a6def3ac544fbb6308d12dd0c070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8112f5b55901b07126cd5da7739c477') in 0.045227 seconds 
-  Import took 0.056655 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.373162 seconds.
-  path: Assets/Prefabs/monstres/nightshade Variant.prefab
-  artifactKey: Guid(df81a6def3ac544fbb6308d12dd0c070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/monstres/nightshade Variant.prefab using Guid(df81a6def3ac544fbb6308d12dd0c070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8ff79db396c316bcbc6142c56da3e20') in 0.049209 seconds 
-  Import took 0.062979 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.283970 seconds.
-  path: Assets/Prefabs/monstres/nightshade Variant.prefab
-  artifactKey: Guid(df81a6def3ac544fbb6308d12dd0c070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/monstres/nightshade Variant.prefab using Guid(df81a6def3ac544fbb6308d12dd0c070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5008658e34b9939e108d875ee16f2a7f') in 0.043396 seconds 
-  Import took 0.054928 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.005998 seconds.
-  path: Assets/Prefabs/monstres/nightshade Variant.prefab
-  artifactKey: Guid(df81a6def3ac544fbb6308d12dd0c070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/monstres/nightshade Variant.prefab using Guid(df81a6def3ac544fbb6308d12dd0c070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc04ae56d15e85f56a24972cccc289e6') in 0.045888 seconds 
-  Import took 0.057864 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.855549 seconds.
-  path: Assets/Prefabs/monstres/nightshade Variant.prefab
-  artifactKey: Guid(df81a6def3ac544fbb6308d12dd0c070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/monstres/nightshade Variant.prefab using Guid(df81a6def3ac544fbb6308d12dd0c070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '130ee19775a8765afb54e13bf28f61b3') in 0.044380 seconds 
-  Import took 0.055915 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.842241 seconds.
-  path: Assets/Prefabs/monstres/nightshade Variant.prefab
-  artifactKey: Guid(df81a6def3ac544fbb6308d12dd0c070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/monstres/nightshade Variant.prefab using Guid(df81a6def3ac544fbb6308d12dd0c070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c98e3e0e3702a8ad2b05d2aacb04bab6') in 0.042117 seconds 
-  Import took 0.052205 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.001130 seconds.
-  path: Assets/Prefabs/monstres/nightshade Variant.prefab
-  artifactKey: Guid(df81a6def3ac544fbb6308d12dd0c070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/monstres/nightshade Variant.prefab using Guid(df81a6def3ac544fbb6308d12dd0c070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e8873776f1141de7edd13c29c435747') in 0.046472 seconds 
-  Import took 0.058348 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.569998 seconds.
-  path: Assets/Prefabs/monstres/nightshade Variant.prefab
-  artifactKey: Guid(df81a6def3ac544fbb6308d12dd0c070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/monstres/nightshade Variant.prefab using Guid(df81a6def3ac544fbb6308d12dd0c070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f9e4b291212665a65bfa8a67e17d217') in 0.050395 seconds 
-  Import took 0.059270 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.298953 seconds.
-  path: Assets/Prefabs/monstres/nightshade Variant.prefab
-  artifactKey: Guid(df81a6def3ac544fbb6308d12dd0c070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/monstres/nightshade Variant.prefab using Guid(df81a6def3ac544fbb6308d12dd0c070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91542f784d42e416f6f0087f96bae69b') in 0.046963 seconds 
-  Import took 0.056679 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.425727 seconds.
-  path: Assets/Prefabs/monstres/nightshade Variant.prefab
-  artifactKey: Guid(df81a6def3ac544fbb6308d12dd0c070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/monstres/nightshade Variant.prefab using Guid(df81a6def3ac544fbb6308d12dd0c070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02b10f8980c3a205d954c2fddd231e77') in 0.042726 seconds 
-  Import took 0.053981 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.810464 seconds.
-  path: Assets/Prefabs/monstres/nightshade Variant.prefab
-  artifactKey: Guid(df81a6def3ac544fbb6308d12dd0c070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/monstres/nightshade Variant.prefab using Guid(df81a6def3ac544fbb6308d12dd0c070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98deffe8b0317aeff7dc346b49ba291a') in 0.043519 seconds 
-  Import took 0.057241 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.799378 seconds.
-  path: Assets/Prefabs/monstres/nightshade Variant.prefab
-  artifactKey: Guid(df81a6def3ac544fbb6308d12dd0c070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/monstres/nightshade Variant.prefab using Guid(df81a6def3ac544fbb6308d12dd0c070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aec116785c9505b43daf4c1a21b46036') in 0.042258 seconds 
-  Import took 0.053754 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.788599 seconds.
-  path: Assets/Prefabs/monstres/nightshade Variant.prefab
-  artifactKey: Guid(df81a6def3ac544fbb6308d12dd0c070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/monstres/nightshade Variant.prefab using Guid(df81a6def3ac544fbb6308d12dd0c070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '377c1a27dc863aa50b7d2f5356687543') in 0.043491 seconds 
-  Import took 0.056259 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.160739 seconds.
-  path: Assets/Prefabs/monstres/nightshade Variant.prefab
-  artifactKey: Guid(df81a6def3ac544fbb6308d12dd0c070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/monstres/nightshade Variant.prefab using Guid(df81a6def3ac544fbb6308d12dd0c070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdfc903d2d00085cd66e7553ec0aed2a') in 0.044166 seconds 
-  Import took 0.054841 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.648115 seconds.
-  path: Assets/Prefabs/monstres/nightshade Variant.prefab
-  artifactKey: Guid(df81a6def3ac544fbb6308d12dd0c070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/monstres/nightshade Variant.prefab using Guid(df81a6def3ac544fbb6308d12dd0c070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f65ad6bc67df99f681ac8b0d1b61c8b') in 0.042562 seconds 
-  Import took 0.054759 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.004926 seconds.
-  path: Assets/Prefabs/monstres/nightshade Variant.prefab
-  artifactKey: Guid(df81a6def3ac544fbb6308d12dd0c070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/monstres/nightshade Variant.prefab using Guid(df81a6def3ac544fbb6308d12dd0c070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06fbfbff31ee1b124835a2483948d78c') in 0.041736 seconds 
-  Import took 0.053659 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.017386 seconds.
-  path: Assets/Prefabs/monstres/nightshade Variant.prefab
-  artifactKey: Guid(df81a6def3ac544fbb6308d12dd0c070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/monstres/nightshade Variant.prefab using Guid(df81a6def3ac544fbb6308d12dd0c070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a772afffeb7b8202a6c8148c4f8b9f9d') in 0.037917 seconds 
-  Import took 0.049217 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 25.112630 seconds.
-  path: Assets/Prefabs/monstres/nightshade Variant.prefab
-  artifactKey: Guid(df81a6def3ac544fbb6308d12dd0c070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/monstres/nightshade Variant.prefab using Guid(df81a6def3ac544fbb6308d12dd0c070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17e9dcb0417ecda9b3d1131b39434a60') in 0.041042 seconds 
-  Import took 0.052297 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.583112 seconds.
-  path: Assets/Prefabs/monstres/nightshade Variant.prefab
-  artifactKey: Guid(df81a6def3ac544fbb6308d12dd0c070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/monstres/nightshade Variant.prefab using Guid(df81a6def3ac544fbb6308d12dd0c070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '128f4365745c891be8ffbd075b6b0bd5') in 0.037605 seconds 
-  Import took 0.046659 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 48.114923 seconds.
-  path: Assets/Prefabs/monstres/nightshade Variant.prefab
-  artifactKey: Guid(df81a6def3ac544fbb6308d12dd0c070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/monstres/nightshade Variant.prefab using Guid(df81a6def3ac544fbb6308d12dd0c070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58f440c835111d6790ec18a9c98b88a0') in 0.034545 seconds 
-  Import took 0.042447 seconds .
-
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+Registered in 1.137031 seconds.

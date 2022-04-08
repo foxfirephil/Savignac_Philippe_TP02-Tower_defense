@@ -28,6 +28,7 @@ public class ZombiePath : MonoBehaviour, IFreeze
             if (item.name == "pathend")
             {
                 Life.nbLife -= 1;
+                GameManager.nbEnnWave -= 1;
                 Destroy(gameObject);
                 break;
             }

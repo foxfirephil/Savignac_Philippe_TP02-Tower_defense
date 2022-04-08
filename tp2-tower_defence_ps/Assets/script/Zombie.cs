@@ -41,6 +41,7 @@ public class Zombie : MonoBehaviour, IZombie
         ToggRagdoll(true);
         bodyCol.enabled = false;
         GameManager.nbEnn += 1;
+        GameManager.nbEnnWave -= 1;
         Coins.nbCoins += 100;
         deathsound.Play();
         Destroy(gameObject, 2f);
