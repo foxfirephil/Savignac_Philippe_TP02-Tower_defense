@@ -48,28 +48,37 @@ public class HandlerTurret : MonoBehaviour
 
     void assign_turret_gun()
     {
-        Coins.nbCoins -= GunPrix;
-        ui_change_sell();
-        // return 1;
-        grakata = 1;
-        assign_grakata(grakata);
+        if (Coins.nbCoins >= 100)
+        {
+            Coins.nbCoins -= GunPrix;
+            ui_change_sell();
+            // return 1;
+            grakata = 1;
+            assign_grakata(grakata);
+        }
 
     }
     void assign_turret_bomb()
     {
-        Coins.nbCoins -= BombPrix;
-        ui_change_sell();
-        //return 2;
-        grakata = 2;
-        assign_grakata(grakata);
+        if (Coins.nbCoins >= 200)
+        {
+            Coins.nbCoins -= BombPrix;
+            ui_change_sell();
+            //return 2;
+            grakata = 2;
+            assign_grakata(grakata);
+        }
     }
     void assign_turret_ice()
     {
-        Coins.nbCoins -= IcePrix;
-        ui_change_sell();
-        //return 3;
-        grakata = 3;
-        assign_grakata(grakata);
+        if (Coins.nbCoins >= 250)
+        {
+            Coins.nbCoins -= IcePrix;
+            ui_change_sell();
+            //return 3;
+            grakata = 3;
+            assign_grakata(grakata);
+        }
     }
     void turret_sell()
     {

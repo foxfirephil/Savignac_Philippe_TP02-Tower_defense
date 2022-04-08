@@ -4,5 +4,5 @@ using UnityEngine;
 
 static public class Life 
 {
-    static public int nbLife=100;
+    static public int nbLife=10;
 }

@@ -5,17 +5,20 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    //public instance
     public static int level;
     public bool IsStart=false;
     public static int nbEnn;
     public GameObject UiGameOver;
 
-    AudioSource GameOverFx;
-    AudioSource Ambiance1;
-    AudioSource Ambiance2;
+    //public instance audio
+    public AudioSource GameOverFx;
+    public AudioSource Ambiance1;
+    public AudioSource Ambiance2;
 
     public GameObject spawn;
 
+    //instance child
     float waveTimer = 20f;
     bool IsRoundActive = false;
     bool TimerActive = true;
@@ -23,9 +26,10 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //début de jeu
         level = 0;
         spawn.SetActive(false);
-        GameOverFx = GetComponent<AudioSource>();
+        Ambiance2.Play();
     }
 
     // Update is called once per frame
@@ -39,11 +43,13 @@ public class GameManager : MonoBehaviour
             }
             if (waveTimer < 0)
             {
+                //quand la nouvelle vage commence
                 level++;
                 IsRoundActive = true;
                 nbEnnWave = 10 + level * 4;
                 TimerActive = false;
-
+                Ambiance2.Stop();
+                Ambiance1.Play();
             }
         }
 
@@ -53,22 +59,28 @@ public class GameManager : MonoBehaviour
             Debug.Log(nbEnnWave);
             if (nbEnnWave<=0)
             {
+                //quand la vague fini
                 spawn.SetActive(false);
                 IsRoundActive = false;
                 waveTimer = 15f;
                 TimerActive = true;
+                Ambiance1.Stop();
+                Ambiance2.Play();
             }
         }
             
-
+        //si pv joueur sont a 0
         if (Life.nbLife<=0)
         { game_over(); }
     }
 
     void game_over()
     {
-        Time.timeScale = 0;
-        UiGameOver.SetActive(true);
+        //joue musique fin
         GameOverFx.Play();
+        //active l'image gameover
+        UiGameOver.SetActive(true);
+        //pause le joueur
+        Time.timeScale = 0;
     }
 }

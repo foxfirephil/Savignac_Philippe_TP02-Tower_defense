@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class bomb : MonoBehaviour
 {
-    const float radius = 50f;
+    const float radius = 10f;
     // Start is called before the first frame update
     void Start()
     {
-        //appeler explose apres 3 secondes
-        Invoke("Explode", 3f);
+        //appeler explose apres 1 secondes
+        Invoke("Explode", 1f);
     }
 
     
@@ -29,7 +29,7 @@ public class bomb : MonoBehaviour
 
             if (c.TryGetComponent(out Rigidbody rb))
             {
-                //on a trouver un rigiid boddy, donc appliquer la force
+                //on a trouver un rigid boddy, donc appliquer la force
                 rb.AddExplosionForce(300f,transform.position, radius, 2f);
             }
         }
