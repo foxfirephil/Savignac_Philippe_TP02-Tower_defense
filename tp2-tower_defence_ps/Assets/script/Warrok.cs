@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Zombie : MonoBehaviour, IZombie
+public class Warrok : MonoBehaviour, IZombie
 {
     public int lifebar;
+    public GameObject warroksmallprefab;
+
     Rigidbody[] rbs;
     Animator animator;
     AudioSource deathsound;
@@ -40,10 +42,11 @@ public class Zombie : MonoBehaviour, IZombie
     {
         ToggRagdoll(true);
         bodyCol.enabled = false;
-        GameManager.nbEnn += 1;
-        Coins.nbCoins += 20;
+        Coins.nbCoins += 30;
         deathsound.Play();
-        Destroy(gameObject, 2f);
+        Instantiate(warroksmallprefab, transform.position, Quaternion.identity);
+        Instantiate(warroksmallprefab, transform.position, Quaternion.identity);
+        Destroy(gameObject, 1f);
     }
 
     void ToggRagdoll(bool value)
